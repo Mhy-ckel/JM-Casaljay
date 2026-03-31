@@ -1,0 +1,27 @@
+
+
+.mem {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+
+p {
+    font-size: 20px;
+    margin: 0;
+    background-color: azure;
+}
+
+ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul li {
+    font-size: 20px;
+    list-style: none;
+}
