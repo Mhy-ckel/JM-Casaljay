@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./formRegistration.css";
+import "./FormRegistration.css";
 
 
 const FormRegistration = () => {
