@@ -1,0 +1,91 @@
+
+.poke-container {
+  text-align: center;
+  padding: 20px;
+}
+
+.poke-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.poke-h1 {
+  color: #ffcc00;
+}
+
+.poke-card {
+  background: #161b22;
+  border-radius: 15px;
+  padding: 15px;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+
+.poke-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+
+.poke-card .poke-img {
+  width: 100px;
+  height: 100px;
+}
+
+
+.poke-loader {
+  margin: 50px auto;
+  width: 60px;
+  height: 60px;
+  border: 6px solid #333;
+  border-top: 6px solid #58a6ff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+
+.skeleton {
+  animation: pulse 1.5s;
+}
+
+
+.poke-sk-img {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 10px;
+  background: #2a2f36;
+}
+
+
+.poke-sk-text {
+  width: 60%;
+  height: 15px;
+  margin: 10px auto 0;
+  border-radius: 10px;
+  background: #2a2f36;
+}
+
+
+@keyframes pulse {
+  0% {
+    background-color: #2a2f36;
+  }
+  50% {
+    background-color: #3a4048;
+  }
+  100% {
+    background-color: #2a2f36;
+  }
+}

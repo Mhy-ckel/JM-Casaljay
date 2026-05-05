@@ -1,0 +1,107 @@
+
+
+.Pokh1emon-container {
+  background-color: black;
+  text-align: center;
+  padding: 20px;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+
+.Pokh1emon-h1 {
+  color: #ffcc00;
+}
+
+
+
+.buttons .Pokh1emon-btn {
+  margin: 5px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(45deg, #ff3b3b, #ff0000);
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.buttons .Pokh1emon-btn:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px red;
+}
+
+
+.Pokh1emon-grid {
+  display: grid;
+  grid-template-columns: repeat(5, 200px);
+  gap: 20px;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+
+.Pokh1emon-card {
+  background: #161b22;
+  border-radius: 15px;
+  padding: 15px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+
+.Pokh1emon-card:nth-child(1) { animation-delay: 0.1s; }
+.Pokh1emon-card:nth-child(2) { animation-delay: 0.2s; }
+.Pokh1emon-card:nth-child(3) { animation-delay: 0.3s; }
+.Pokh1emon-card:nth-child(4) { animation-delay: 0.4s; }
+.Pokh1emon-card:nth-child(5) { animation-delay: 0.5s; }
+
+
+.Pokh1emon-card:hover {
+  transform: translateY(-10px) scale(1.07);
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+}
+
+
+.Pokh1emon-card .img {
+  width: 100px;
+  animation: float 3s ease-in-out infinite;
+}
+
+
+@keyframes float {
+  0% { transform: translateY(0px); }
+  50% { transform: translateY(-8px); }
+  100% { transform: translateY(0px); }
+}
+
+
+@keyframes fadeInUp {
+  from {
+    transform: translateY(40px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+
+.card::before {
+  content: "";
+  position: absolute;
+  top: -100%;
+  left: 0;
+  width: 100%;
+  height: 200%;
+  background: linear-gradient(transparent, rgba(0, 255, 255, 0.2), transparent);
+  animation: scan 3s linear infinite;
+}
+
+@keyframes scan {
+  0% { top: -100%; }
+  100% { top: 100%; }
+}

@@ -1,0 +1,55 @@
+
+
+
+.con {
+  width: 400px;
+  margin: 40px auto;
+  padding: 25px;
+  background: rgba(226, 215, 215, 0.1);
+  border-radius: 15px;
+}
+
+.text1 {
+  text-align: center;
+  margin-bottom: 20px;
+  color: white
+}
+
+
+.text2 {
+  margin-bottom: 20px;
+}
+
+
+.text3 {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  font-size: 14px;
+}
+
+
+
+.msg {
+  margin-top: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  color: white;
+}
+
+.hh3 {
+  margin: 5px 0;
+}
+
+.mit {
+  border: 0;
+  padding: 8px 0px;
+  border-radius: 3px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: white;
+  cursor: pointer;
+}

@@ -1,0 +1,49 @@
+
+
+.asa {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.asa1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  letter-spacing: 2px;
+}
+
+.asa2 {
+  padding: 10px;
+  width: 280px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+  font-size: 14px;
+}
+
+.asa3 {
+  margin-top: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  background-color: blue ;
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.asa3:hover {
+  background-color: black;
+}
+
+.asa4 {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: bold;
+  letter-spacing: 3px;
+}
+
+.asa4:last-child {
+  font-size: 50px;
+  margin-top: 10px;
+}

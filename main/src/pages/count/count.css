@@ -1,0 +1,50 @@
+/* Page container */
+.cont {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+}
+
+.ccc2 {
+    background: wheat;
+    padding: 30px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.ccc {
+    font-size: 80px;
+    color: black;
+    margin-bottom: 10px;
+}
+
+
+.ccc1 {
+    color: black;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.btnnn {
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background: blue;
+    cursor: pointer;
+    transition: 0.2s ease;
+}
+
+
+.btnnn:hover {
+    background: red;
+    transform: scale(1.05);
+}
+
+.btnnn:active {
+    transform: scale(0.95);
+}

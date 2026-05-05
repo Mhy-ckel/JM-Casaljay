@@ -1,0 +1,18 @@
+[
+  { "id": 493, "name": "arceus", "type": "normal", "level": 100, "power": 120, "category": "mythical", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/493.png" },
+  { "id": 386, "name": "deoxys", "type": "psychic", "level": 90, "power": 110, "category": "mythical", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/386.png" },
+  { "id": 151, "name": "mew", "type": "psychic", "level": 80, "power": 100, "category": "mythical", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/151.png" },
+  { "id": 491, "name": "darkrai", "type": "dark", "level": 95, "power": 115, "category": "mythical", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/491.png" },
+  { "id": 385, "name": "jirachi", "type": "steel", "level": 85, "power": 100, "category": "mythical", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/385.png" },
+
+  { "id": 144, "name": "articuno", "type": "ice", "level": 70, "power": 95, "category": "sub", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/144.png" },
+  { "id": 145, "name": "zapdos", "type": "electric", "level": 70, "power": 95, "category": "sub", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/145.png" },
+  { "id": 146, "name": "moltres", "type": "fire", "level": 70, "power": 95, "category": "sub", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/146.png" },
+  { "id": 380, "name": "latias", "type": "dragon", "level": 80, "power": 105, "category": "sub", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/380.png" },
+  { "id": 381, "name": "latios", "type": "dragon", "level": 80, "power": 105, "category": "sub", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/381.png" },
+
+  { "id": 384, "name": "rayquaza", "type": "dragon", "level": 100, "power": 130, "category": "legendary", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/384.png" },
+  { "id": 150, "name": "mewtwo", "type": "psychic", "level": 100, "power": 130, "category": "legendary", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/150.png" },
+  { "id": 382, "name": "kyogre", "type": "water", "level": 100, "power": 125, "category": "legendary", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/382.png" },
+  { "id": 383, "name": "groudon", "type": "ground", "level": 100, "power": 125, "category": "legendary", "image": "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/383.png" }
+]
