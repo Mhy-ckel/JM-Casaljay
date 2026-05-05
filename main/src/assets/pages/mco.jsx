@@ -25,7 +25,7 @@ const MCO = () => {
       </section>
 
       <section className="home-grid">
-        <Link to="/" className="home-card">
+        <Link to="/pokemon2" className="home-card">
           <h2 className="home-h2">Activity 4</h2>
           <p className="home-p">Pokédex list</p>
         </Link>
@@ -47,7 +47,7 @@ const MCO = () => {
         </Link>
 
         <Link to="/Activity2" className="home-card">
-          <h2 className="home-h2">Amen</h2>
+          <h2 className="home-h2">Ameqn</h2>
           <p className="home-p">Pag may buhay may, pag asa</p>
         </Link>
 
