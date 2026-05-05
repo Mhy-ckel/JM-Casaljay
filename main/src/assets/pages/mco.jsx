@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
-import "./home.css";
+import "./mco.css";
 
-const Home = () => {
+const MCO = () => {
   return (
     <main className="home-home">
 
@@ -42,7 +42,7 @@ const Home = () => {
         </Link>
 
         <Link to="/Form" className="home-card">
-          <h2 className="home-h2">Activity 1</h2>
+          <h2 className="home-h2">Demo FormRegistration</h2>
           <p className="home-p">User registration</p>
         </Link>
 
@@ -61,4 +61,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default MCO;

@@ -1,5 +1,5 @@
 import { BrowserRouter, Routes , Route } from "react-router-dom";
-import Home from "./assets/pages/home";
+import Mco from "./assets/pages/mco";
 import Count from "./pages/count/count";
 import FormRegistration from "./assets/pages/FormRegistration";
 import Activity_2 from "./components/ui/activity_2";
@@ -18,7 +18,7 @@ const App = () => {
     <BrowserRouter>
       <Routes>
 
-        <Route path="/" element={<Pokemon_2 />} />
+        <Route path="/pokemon2" element={<Pokemon_2 />} />
         
         <Route path="/pokemon" element={<Pokemon />} />
 
@@ -30,7 +30,7 @@ const App = () => {
 
         <Route path="/Count" element={<Count />} />
 
-        <Route path="/Home" element={<Home />} />
+        <Route path="/" element={<Mco />} />
 
       </Routes>
     </BrowserRouter>
