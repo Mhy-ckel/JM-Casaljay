@@ -15,7 +15,6 @@ const Pokemon_2 = () => {
   const [pokemon, setPokemon] = useState([]);
   const [loading, setLoading] = useState(true);
 
- 
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
