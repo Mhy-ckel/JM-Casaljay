@@ -1,49 +1,132 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
+body {
+  background-color: #0d0d0d;
+  color: white;
+  font-family: 'Segoe UI', sans-serif;
+}
 
 .asa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 20px;
   text-align: center;
-  margin-top: 100px;
+  gap: 12px;
 }
 
 .asa1 {
-  font-size: 40px;
-  margin-bottom: 20px;
-  letter-spacing: 2px;
+  font-size: clamp(28px, 8vw, 48px);
+  letter-spacing: 6px;
+  font-weight: 800;
+  color: #ffffff;
+  text-transform: uppercase;
+  margin-bottom: 10px;
 }
 
 .asa2 {
-  padding: 10px;
-  width: 280px;
+  padding: 12px 16px;
+  width: min(320px, 90vw);
   border-radius: 8px;
-  border: none;
+  border: 2px solid #333;
   outline: none;
   font-size: 14px;
+  background-color: #1a1a1a;
+  color: white;
+  transition: border-color 0.3s;
+  text-align: center;
+}
+
+.asa2::placeholder {
+  color: #666;
+  font-size: 13px;
+}
+
+.asa2:focus {
+  border-color: #4a90e2;
+}
+
+.asa-buttons {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .asa3 {
-  margin-top: 10px;
-  padding: 10px 20px;
+  padding: 10px 24px;
   border: none;
-  border-radius: 5px;
-  background-color: blue ;
+  border-radius: 8px;
+  background-color: #1a52c4;
   color: white;
   font-size: 14px;
+  font-weight: 600;
   cursor: pointer;
-  transition: 0.3s;
+  transition: background-color 0.3s, transform 0.1s;
+  letter-spacing: 1px;
 }
 
 .asa3:hover {
-  background-color: black;
+  background-color: #0f3a8a;
+}
+
+.asa3:active {
+  transform: scale(0.97);
+}
+
+.asa3.reset {
+  background-color: #333;
+}
+
+.asa3.reset:hover {
+  background-color: #111;
 }
 
 .asa4 {
-  margin-top: 30px;
-  font-size: 30px;
-  font-weight: bold;
-  letter-spacing: 3px;
+  margin-top: 20px;
+  font-size: clamp(22px, 6vw, 34px);
+  font-weight: 800;
+  letter-spacing: 4px;
+  color: #f0e040;
+  text-transform: uppercase;
+  min-height: 50px;
+  transition: all 0.3s ease;
 }
 
-.asa4:last-child {
-  font-size: 50px;
-  margin-top: 10px;
+.error {
+  font-size: 16px;
+  font-weight: 700;
+  color: #ff4444;
+  letter-spacing: 2px;
+  animation: shake 0.4s ease;
+}
+
+@keyframes shake {
+  0%   { transform: translateX(0); }
+  25%  { transform: translateX(-8px); }
+  50%  { transform: translateX(8px); }
+  75%  { transform: translateX(-4px); }
+  100% { transform: translateX(0); }
+}
+
+
+@media (max-width: 480px) {
+  .asa1 {
+    letter-spacing: 4px;
+  }
+
+  .asa3 {
+    padding: 10px 18px;
+    font-size: 13px;
+  }
+
+  .asa4 {
+    letter-spacing: 2px;
+  }
 }

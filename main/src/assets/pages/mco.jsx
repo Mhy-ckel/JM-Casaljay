@@ -28,7 +28,6 @@ const MCO = () => {
           <span className="home-view">View →</span>
         </Link>
 
-
         <Link to="/pokemon" className="home-card">
           <h2 className="home-h2">Activity 3</h2>
           <p className="home-p">legendary Pokemon list</p>

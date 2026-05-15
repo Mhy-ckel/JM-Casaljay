@@ -1,7 +1,13 @@
-
 .poke-container {
   text-align: center;
   padding: 20px;
+  background-color: black;
+  min-height: 100vh;
+}
+
+.poke-h1 {
+  color: #ffcc00;
+  font-size: clamp(1.2rem, 5vw, 2rem);
 }
 
 .poke-grid {
@@ -13,30 +19,24 @@
   padding: 20px;
 }
 
-.poke-h1 {
-  color: #ffcc00;
-}
-
 .poke-card {
   background: #161b22;
   border-radius: 15px;
   padding: 15px;
   transition: 0.3s;
   cursor: pointer;
+  color: white;
 }
-
 
 .poke-card:hover {
   transform: scale(1.1);
   box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
 }
 
-
 .poke-card .poke-img {
   width: 100px;
   height: 100px;
 }
-
 
 .poke-loader {
   margin: 50px auto;
@@ -49,16 +49,12 @@
 }
 
 @keyframes spin {
-  100% {
-    transform: rotate(360deg);
-  }
+  100% { transform: rotate(360deg); }
 }
-
 
 .skeleton {
-  animation: pulse 1.5s;
+  animation: pulse 1.5s infinite;
 }
-
 
 .poke-sk-img {
   width: 100px;
@@ -68,7 +64,6 @@
   background: #2a2f36;
 }
 
-
 .poke-sk-text {
   width: 60%;
   height: 15px;
@@ -77,15 +72,69 @@
   background: #2a2f36;
 }
 
-
 @keyframes pulse {
-  0% {
-    background-color: #2a2f36;
+  0%   { opacity: 1; }
+  50%  { opacity: 0.5; }
+  100% { opacity: 1; }
+}
+
+@media (max-width: 1100px) {
+  .poke-grid {
+    grid-template-columns: repeat(4, 1fr);
   }
-  50% {
-    background-color: #3a4048;
+}
+
+
+@media (max-width: 850px) {
+  .poke-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    padding: 15px;
   }
-  100% {
-    background-color: #2a2f36;
+}
+
+
+@media (max-width: 600px) {
+  .poke-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    padding: 12px;
+  }
+
+  .poke-card {
+    padding: 10px;
+  }
+
+  .poke-card .poke-img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .poke-sk-img {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+
+@media (max-width: 380px) {
+  .poke-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    padding: 8px;
+  }
+
+  .poke-card {
+    padding: 8px;
+  }
+
+  .poke-card .poke-img {
+    width: 55px;
+    height: 55px;
+  }
+
+  .poke-sk-img {
+    width: 55px;
+    height: 55px;
   }
 }
