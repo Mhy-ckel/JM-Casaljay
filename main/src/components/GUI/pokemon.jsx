@@ -34,7 +34,6 @@ const Pokemon = () => {
       .then((res) => res.json())
       .then((data) => {
         setPokemon(data);
-        setLoading(false);
       })
       .catch((err) => console.error(err));
   }, []);

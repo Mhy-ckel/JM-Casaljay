@@ -18,7 +18,7 @@ const Pokemon_2 = () => {
   useEffect(() => {
     const fetchPokemon = async () => {
       try {
-        const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=1025");
+        const response = await fetch("https://pokeapi.co/api/v2/pokemon?limit=100");
         const data = await response.json();
 
 
@@ -30,7 +30,10 @@ const Pokemon_2 = () => {
         );
 
         setPokemon(details);
-        setLoading(false);
+
+        setTimeout(() => {
+          setLoading(false);
+        }, 1500);
       } catch (err) {
         console.error(err);
       }
